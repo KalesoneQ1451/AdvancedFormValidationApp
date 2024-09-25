@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Prosimy dodać imię", Toast.LENGTH_SHORT).show();
                 } else if (sprawdzNazwisko.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Prosimy dodać nazwisko", Toast.LENGTH_SHORT).show();
-                } else if (sprawdzTelefon.length() != 9) {
+                } else if (sprawdzTelefon.length() < 9) {
                     Toast.makeText(MainActivity.this, "Proszę podać numer 9 cyfrowy", Toast.LENGTH_SHORT).show();
                 }else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(sprawdzMail).matches()) {
                     Toast.makeText(MainActivity.this, "Niepoprawny adres e-mail", Toast.LENGTH_SHORT).show();
